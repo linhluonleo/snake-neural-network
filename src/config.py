@@ -1,14 +1,12 @@
-import math
-
 import numpy as np
 
-map_size = 10
-tile_size = 64
-screen_height = map_size * tile_size
-screen_width = screen_height * 2
+map_size = 15
+cell_size = 32
+screen_height = map_size * cell_size
+screen_width = screen_height
 
-fov = math.pi * 2
-half_fov = math.pi
+fov = np.pi * 2
+half_fov = np.pi
 casted_rays = 8
 angle = fov / casted_rays
 
